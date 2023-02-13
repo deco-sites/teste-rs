@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Header({ logo, title }:Props): any {
   return (
-    <div class="w-full p-5 flex flex-row items-center justify-between border-b-1 border-[#E7E9EE] ">
+    <section class="w-full p-5 flex flex-row items-center justify-between border-b-1 border-[#E7E9EE] ">
       <img src={logo} width={116} height={42} />
 
       <nav class="flex flex-row gap-4">
@@ -26,6 +26,6 @@ export default function Header({ logo, title }:Props): any {
         <a>Fale conosco</a>
         <p>Brasil</p>
       </div>
-    </div>
+    </section>
   )
 }

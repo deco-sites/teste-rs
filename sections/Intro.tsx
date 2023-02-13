@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Intro({ banner, title }:Props): any {
   return (
-    <div class="max-w-6xl m-auto bg-[##F8F7FC]">
+    <section class="max-w-6xl m-auto bg-[##F8F7FC]">
       <div class="w-full p-5 flex flex-row items-center justify-between">
         <div>
           <span class="font-normal text-text text-sm">Marketplace</span>
@@ -54,6 +54,6 @@ export default function Intro({ banner, title }:Props): any {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
