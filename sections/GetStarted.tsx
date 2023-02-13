@@ -6,7 +6,7 @@ export interface Props {
 
 export default function GetStarted({ enableInspectVSCode }: Props) {
   return (
-    <section class="pt-20 pb-32">
+    <section class="pt-20 pb-32 bg-primary">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap items-center -m-6">
           <div class="w-full md:w-1/2 p-6">
@@ -21,7 +21,7 @@ export default function GetStarted({ enableInspectVSCode }: Props) {
           <div class="w-full md:w-1/2 p-6">
             <div class="md:max-w-lg">
               <h2 class="mb-3 font-bold text-primary-dark text-4xl">
-                Welcome to Live!
+              Washiington
               </h2>
               <p class="text-lg">
                 You can create a new page by visiting it.

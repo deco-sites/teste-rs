@@ -10,14 +10,16 @@ export default {
         "2xl": "1536px",
       },
       colors: {
-        primary: "#2FD180",
+        primary: "#E31C58",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
+        'text': '#142032',
         transparent: "transparent",
       },
       fontFamily: {
         sans: ["Albert Sans", "sans-serif"],
         serif: ["serif"],
+        inter: ["Inter"],
       },
     },
   },
