@@ -10,8 +10,8 @@ export interface Props {
 export default function Intro({ banner, title }:Props): any {
   return (
     <section class="max-w-6xl m-auto bg-[##F8F7FC]">
-      <div class="w-full p-5 flex flex-row items-center justify-between">
-        <div>
+      <div class="w-full p-5 flex flex-row items-center gap-3 justify-between md:flex-col ">
+        <div class="w-1/2">
           <span class="font-normal text-text text-sm">Marketplace</span>
           <h1 class="font-normal text-text text-5xl">
             Aumente seu alcance e reduza custos com um modelo de marketplace
@@ -23,8 +23,8 @@ export default function Intro({ banner, title }:Props): any {
           Fale com um consultor
         </button>
         </div>
-        <div >
-          <img src={banner} class="w-[640px]" />
+        <div class="w-1/2" >
+          <img src={banner} class="w-full h-[474.39px]" />
         </div>
       </div>
 
