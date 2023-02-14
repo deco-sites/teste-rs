@@ -9,12 +9,14 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiveControls.tsx";
-import * as $$$0 from "./sections/GetStarted.tsx";
-import * as $$$1 from "./sections/Head.tsx";
-import * as $$$2 from "./sections/Header.tsx";
-import * as $$$3 from "./sections/Intro.tsx";
-import * as $$$4 from "./sections/Markdown.tsx";
-import * as $$$5 from "./sections/QuillText.tsx";
+import * as $$$0 from "./sections/About.tsx";
+import * as $$$1 from "./sections/Blog.tsx";
+import * as $$$2 from "./sections/GetStarted.tsx";
+import * as $$$3 from "./sections/Head.tsx";
+import * as $$$4 from "./sections/Header.tsx";
+import * as $$$5 from "./sections/Intro.tsx";
+import * as $$$6 from "./sections/Markdown.tsx";
+import * as $$$7 from "./sections/QuillText.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -26,15 +28,65 @@ const manifest: DecoManifest = {
   },
   islands: { "./islands/LiveControls.tsx": $$0 },
   sections: {
-    "./sections/GetStarted.tsx": $$$0,
-    "./sections/Head.tsx": $$$1,
-    "./sections/Header.tsx": $$$2,
-    "./sections/Intro.tsx": $$$3,
-    "./sections/Markdown.tsx": $$$4,
-    "./sections/QuillText.tsx": $$$5,
+    "./sections/About.tsx": $$$0,
+    "./sections/Blog.tsx": $$$1,
+    "./sections/GetStarted.tsx": $$$2,
+    "./sections/Head.tsx": $$$3,
+    "./sections/Header.tsx": $$$4,
+    "./sections/Intro.tsx": $$$5,
+    "./sections/Markdown.tsx": $$$6,
+    "./sections/QuillText.tsx": $$$7,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
+    "./sections/About.tsx": {
+      "inputSchema": {
+        "title": " About",
+        "type": "object",
+        "properties": {},
+        "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Blog.tsx": {
+      "inputSchema": {
+        "title": " Blog",
+        "type": "object",
+        "properties": {
+          "posts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "img": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Img",
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+              },
+              "required": [
+                "img",
+                "title",
+                "text",
+              ],
+            },
+            "title": "Posts",
+          },
+        },
+        "required": [
+          "posts",
+        ],
+      },
+      "outputSchema": null,
+    },
     "./sections/GetStarted.tsx": {
       "inputSchema": {
         "title": " Get Started",
