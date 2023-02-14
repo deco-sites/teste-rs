@@ -10,7 +10,7 @@ interface Props{
 
 export default function CardBlog({ data }:Props) {
   return( 
-    <div class="w-1/3 h-[500px]" >
+    <div class="w-1/3 h-[500px] bg-white" >
       <img src={data.img} class="w-[100%] h-[200px]" />
       <h4 class="font-normal text-xl m-[30px]">
         {data.title}

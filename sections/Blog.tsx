@@ -11,14 +11,16 @@ export interface Props {
 
 export default function Blog({ posts }: Props){
   return(
-    <section class="max-w-6xl m-auto pt-20 pb-24 flex flex-col bg-[#FFF3F6]">
-      <h3 class="text-text font-normal text-4xl">Saiba mais sobre Marketplace</h3>
-      <div class="flex flex-row gap-7">
-        {posts && posts.map(
-          post=> (
-            <CardBlog data={post} />
-          )
-        )}
+    <section class="w-full m-auto pt-20 pb-24 bg-[#FFF3F6]">
+      <div class="max-w-6xl m-auto flex flex-col">
+        <h3 class="text-text font-normal text-4xl">Saiba mais sobre Marketplace</h3>
+        <div class="flex flex-row gap-7">
+          {posts && posts.map(
+            post=> (
+              <CardBlog data={post} />
+            )
+          )}
+        </div>
       </div>
     </section>
   )
