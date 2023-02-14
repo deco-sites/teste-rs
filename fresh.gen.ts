@@ -11,12 +11,13 @@ import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiveControls.tsx";
 import * as $$$0 from "./sections/About.tsx";
 import * as $$$1 from "./sections/Blog.tsx";
-import * as $$$2 from "./sections/GetStarted.tsx";
-import * as $$$3 from "./sections/Head.tsx";
-import * as $$$4 from "./sections/Header.tsx";
-import * as $$$5 from "./sections/Intro.tsx";
-import * as $$$6 from "./sections/Markdown.tsx";
-import * as $$$7 from "./sections/QuillText.tsx";
+import * as $$$2 from "./sections/Contact.tsx";
+import * as $$$3 from "./sections/Footer.tsx";
+import * as $$$4 from "./sections/Head.tsx";
+import * as $$$5 from "./sections/Header.tsx";
+import * as $$$6 from "./sections/Intro.tsx";
+import * as $$$7 from "./sections/Markdown.tsx";
+import * as $$$8 from "./sections/QuillText.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -30,12 +31,13 @@ const manifest: DecoManifest = {
   sections: {
     "./sections/About.tsx": $$$0,
     "./sections/Blog.tsx": $$$1,
-    "./sections/GetStarted.tsx": $$$2,
-    "./sections/Head.tsx": $$$3,
-    "./sections/Header.tsx": $$$4,
-    "./sections/Intro.tsx": $$$5,
-    "./sections/Markdown.tsx": $$$6,
-    "./sections/QuillText.tsx": $$$7,
+    "./sections/Contact.tsx": $$$2,
+    "./sections/Footer.tsx": $$$3,
+    "./sections/Head.tsx": $$$4,
+    "./sections/Header.tsx": $$$5,
+    "./sections/Intro.tsx": $$$6,
+    "./sections/Markdown.tsx": $$$7,
+    "./sections/QuillText.tsx": $$$8,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -87,19 +89,20 @@ const manifest: DecoManifest = {
       },
       "outputSchema": null,
     },
-    "./sections/GetStarted.tsx": {
+    "./sections/Contact.tsx": {
       "inputSchema": {
-        "title": " Get Started",
+        "title": " Contact",
         "type": "object",
-        "properties": {
-          "enableInspectVSCode": {
-            "type": [
-              "boolean",
-              "null",
-            ],
-            "title": "Enable Inspect V S Code",
-          },
-        },
+        "properties": {},
+        "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Footer.tsx": {
+      "inputSchema": {
+        "title": " Footer",
+        "type": "object",
+        "properties": {},
         "required": [],
       },
       "outputSchema": null,

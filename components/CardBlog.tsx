@@ -15,7 +15,7 @@ export default function CardBlog({ data }:Props) {
       <h4 class="font-normal text-xl m-[30px]">
         {data.title}
       </h4>
-      <p class="font-normal text-sm">
+      <p class="font-normal text-sm m-[30px]">
         {data.text}
       </p>
     </div>
