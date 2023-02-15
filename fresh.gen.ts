@@ -187,6 +187,10 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Title",
           },
+          "description": {
+            "type": "string",
+            "title": "Description",
+          },
           "banner": {
             "format": "image-uri",
             "type": "string",
@@ -195,6 +199,7 @@ const manifest: DecoManifest = {
         },
         "required": [
           "title",
+          "description",
           "banner",
         ],
       },

@@ -4,20 +4,23 @@ import ActiveLink from '../components/ActiveLink.tsx';
 
 export interface Props {
   title: string;
+  description: string;
   banner: LiveImage
 }
 
-export default function Intro({ banner, title }:Props): any {
+export default function Intro({ banner, title, description }:Props): any {
   return (
     <section class="max-w-6xl m-auto bg-[##F8F7FC]">
       <div class="w-full p-5 flex flex-col items-center gap-3 justify-between lg:flex-row ">
         <div class="lg:w-1/2">
           <span class="font-normal text-text text-sm">Marketplace</span>
           <h1 class="font-normal text-text text-5xl">
-            Aumente seu alcance e reduza custos com um modelo de marketplace
+            {title}
+            {/* Aumente seu alcance e reduza custos com um modelo de marketplace */}
           </h1>
           <p class="font-normal text-text text-base text-[#4A596B] mt-4" >
-            Aproveite uma plataforma de comércio colaborativo com marketplace nativo e OMS unificado para acelerar seu time-to-revenue.
+            {description}
+            {/* Aproveite uma plataforma de comércio colaborativo com marketplace nativo e OMS unificado para acelerar seu time-to-revenue. */}
           </p>
           <button class="bg-primary pt-4 pb-4 pl-5 pr-5 text-white font-medium text-xs rounded-md mt-8">
           Fale com um consultor
