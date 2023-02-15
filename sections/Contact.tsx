@@ -7,7 +7,7 @@ export interface Props {
 
 export default function Blog({  }: Props){
   return(
-    <section class="w-full m-auto pt-20 pb-24 bg-[#E31C58]">
+    <section class="w-full m-auto pt-20 pb-24 bg-[#E31C58] pl-5 pr-5">
       <div class="max-w-6xl m-auto flex flex-col">
         <h3 class="max-w-4xl text-white font-normal text-5xl">
           Comece a construir sua experiência de marketplace hoje mesmo.

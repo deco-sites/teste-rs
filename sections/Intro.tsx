@@ -10,8 +10,8 @@ export interface Props {
 export default function Intro({ banner, title }:Props): any {
   return (
     <section class="max-w-6xl m-auto bg-[##F8F7FC]">
-      <div class="w-full p-5 flex flex-row items-center gap-3 justify-between md:flex-col ">
-        <div class="w-1/2">
+      <div class="w-full p-5 flex flex-col items-center gap-3 justify-between lg:flex-row ">
+        <div class="lg:w-1/2">
           <span class="font-normal text-text text-sm">Marketplace</span>
           <h1 class="font-normal text-text text-5xl">
             Aumente seu alcance e reduza custos com um modelo de marketplace
@@ -23,13 +23,13 @@ export default function Intro({ banner, title }:Props): any {
           Fale com um consultor
         </button>
         </div>
-        <div class="w-1/2" >
+        <div class="lg:w-1/2" >
           <img src={banner} class="w-full h-[474.39px]" />
         </div>
       </div>
 
-      <div class="flex flex-row gap-8 mt-48 pb-24">
-        <div class="w-1/3">
+      <div class="flex flex-col items-center gap-8 mt-48 pb-24 lg:flex-row">
+        <div class="w-1/2 lg:w-1/3">
           <img src="/img/icon1.png" />
           <span class="font-normal text-text text-xl mt-4">Aumente sua receita</span>
           <p class="font-normal text-[#4A596B] text-sm mt-4">
@@ -37,14 +37,14 @@ export default function Intro({ banner, title }:Props): any {
             e serviços de um grande número de sellers.
           </p>
         </div>
-        <div class="w-1/3"> 
+        <div class="w-1/2 lg:w-1/3"> 
           <img src="/img/icon2.png" />
           <span class="font-normal text-text text-xl mt-4">Seja essencial para os clientes</span>
           <p class="font-normal text-[#4A596B] text-sm mt-4">
           Crie uma loja que oferece tudo o que seus clientes precisam.
           </p>
         </div>
-        <div class="w-1/3">
+        <div class="w-1/2 lg:w-1/3">
           <img src="/img/icon3.png" />
           <span class="font-normal text-text text-xl mt-4">Reduza custos e riscos</span>
           <p class="font-normal text-[#4A596B] text-sm mt-4">

@@ -5,8 +5,8 @@ export interface Props {
 export default function About({}:Props ){
   return(
     <section class="max-w-6xl m-auto flex flex-col gap-14">
-      <div class="flex flex-row items-center gap-5">
-        <div class="w-1/2" >
+      <div class="flex flex-col items-center gap-5 lg:flex-row">
+        <div class="pl-5 pr-5 lg:w-1/2" >
           <h2 class="font-normal text-4xl text-text">
             Lance um marketplace hoje mesmo
           </h2>
@@ -32,13 +32,13 @@ export default function About({}:Props ){
 
         </div>
         
-        <img src="/img/about1.png" class="w-1/2" />
+        <img src="/img/about1.png" class="pl-5 pr-5 lg:w-1/2" />
       </div>
    
-      <div class="flex flex-row items-center gap-5">
-        <img src="/img/about2.png" class="w-1/2" />
+      <div class="flex flex-col-reverse items-center gap-5 lg:flex-row">
+        <img src="/img/about2.png" class="pl-5 pr-5 lg:w-1/2" />
 
-        <div class="w-1/2" >
+        <div class="pl-5 pr-5 lg:w-1/2" >
           <h2 class="font-normal text-4xl text-text">
             Expanda seu negócio globalmente.
           </h2>
@@ -64,8 +64,8 @@ export default function About({}:Props ){
         </div>
       </div>
 
-      <div class="flex flex-row items-center gap-5">
-        <div class="w-1/2" >
+      <div class="flex flex-col items-center gap-5 lg:flex-row">
+        <div class="pl-5 pr-5 lg:w-1/2" >
           <h2 class="font-normal text-4xl text-text">
             Assuma o controle da sua operação agora
           </h2>
@@ -92,7 +92,7 @@ export default function About({}:Props ){
 
         </div>
         
-        <img src="/img/about3.png" class="w-1/2" />
+        <img src="/img/about3.png" class="pl-5 pr-5 lg:w-1/2" />
       </div>
     </section>
   )
